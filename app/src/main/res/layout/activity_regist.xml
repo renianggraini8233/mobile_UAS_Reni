@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".RegistActivity">
+
+    <TextView
+        android:text="Nama"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_marginBottom="12dp"
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/date/day_of_week" />
+
+    <TextView
+            android:text="Alamat"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_marginBottom="15dp"
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:text="Tanggal Lahir"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_marginBottom="15dp"
+        android:id="@+id/tgl"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:text="Jenis Kelamin"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <Spinner
+        android:layout_marginBottom="15dp"
+        android:entries="@array/Jenis_Kelamin"
+        android:id="@+id/jk"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:text="Agama"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <Spinner
+        android:layout_marginBottom="15dp"
+        android:id="@+id/agama"
+        android:entries="@array/agama"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/cities" />
+
+    <Button
+        android:id="@+id/btnRegist"
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

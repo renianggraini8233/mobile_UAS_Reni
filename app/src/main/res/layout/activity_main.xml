@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingTop="20dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Username"
+        android:textSize="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:text="Password"
+        android:textSize="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:textSize="15dp"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        tools:text="@tools:sample/cities" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:textSize="14dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
